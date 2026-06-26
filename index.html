@@ -63,6 +63,8 @@ nav .right .dl:hover{transform:translateY(-1px)}
 .hero .meta{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center;margin-top:48px}
 .hero .meta a.cta{text-decoration:none;background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;padding:16px 30px;border-radius:2px;transition:background .25s}
 .hero .meta a.cta:hover{background:var(--neon);color:var(--ink)}
+.hero .meta a.cta2{text-decoration:none;background:transparent;color:var(--ink);border:2px solid var(--ink);font-family:var(--sans);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;padding:14px 28px;border-radius:2px;transition:all .25s}
+.hero .meta a.cta2:hover{background:var(--ink);color:var(--paper)}
 .hero .meta .by{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
 
 /* NOTE intro */
@@ -251,6 +253,25 @@ nav .right .dl:hover{transform:translateY(-1px)}
 .aha p:first-of-type{margin-top:0}
 .aha p em{font-style:italic;color:#d7d0bf}
 .aha p.last{color:var(--neon);font-style:italic;font-size:clamp(19px,2vw,26px);margin-top:26px}
+/* closing invitation */
+.invite{margin-top:60px;padding-top:50px;border-top:1px solid var(--line-d)}
+.invite .ik{font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--neon);font-weight:600;text-align:center}
+.invite .ih{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(26px,4vw,46px);line-height:1.06;letter-spacing:-.02em;color:var(--cream);margin:18px auto 0;text-align:center;max-width:880px}
+.invite .intro{font-family:var(--sans);font-size:clamp(14px,1.2vw,16px);line-height:1.6;color:var(--muted-d);max-width:680px;margin:24px auto 0;text-align:center}
+.invite .intro b{color:var(--cream)}
+.offers{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;margin-top:46px;text-align:left}
+@media(max-width:820px){.offers{grid-template-columns:1fr}}
+.offer{border:1px solid var(--line-d);padding:34px;display:flex;flex-direction:column}
+.offer.primary{border-color:var(--neon);background:rgba(226,245,110,.05)}
+.offer .ol{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--neon)}
+.offer h4{font-family:var(--serif);font-style:italic;font-weight:340;font-size:clamp(22px,2.6vw,30px);color:var(--cream);margin:10px 0 14px;line-height:1.1}
+.offer p{font-family:var(--sans);font-size:14px;line-height:1.55;color:var(--muted-d);flex:1}
+.offer .price{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.04em;color:var(--cream);margin:20px 0 18px;text-transform:uppercase}
+.offer a.btn{text-decoration:none;text-align:center;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:15px 22px;border-radius:2px;transition:transform .25s,background .25s}
+.offer.primary a.btn{background:var(--neon);color:var(--ink)}
+.offer.secondary a.btn{background:transparent;color:var(--cream);border:1.5px solid var(--cream)}
+.offer a.btn:hover{transform:translateY(-2px)}
+.offer.secondary a.btn:hover{background:var(--cream);color:var(--ink)}
 @media print{.reveal{opacity:1!important;transform:none!important}.card .panel{animation:none}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
@@ -281,7 +302,9 @@ nav .right .dl:hover{transform:translateY(-1px)}
     <li><a data-go="c8"><span class="n">08</span> The Woo, as a Bridge</a></li>
     <li><a data-go="c9"><span class="n">09</span> Your Voice</a></li>
     <li><a data-go="c10"><span class="n">10</span> Messaging in Action</a></li>
-    <li><a data-go="c11"><span class="n">11</span> Open Threads</a></li>
+    <li><a data-go="c11"><span class="n">11</span> Where We Landed</a></li>
+    <li><a data-go="c12"><span class="n">12</span> Next Steps</a></li>
+    <li><a data-go="c13"><span class="n">13</span> Resources</a></li>
   </ol>
 </div>
 
@@ -293,6 +316,7 @@ nav .right .dl:hover{transform:translateY(-1px)}
     <div class="sub reveal in d2">You don’t have to <mark>override yourself</mark> to do work that matters. This is your brand, built from your own words, mapped to the Niche Please framework.</div>
     <div class="meta reveal in d3">
       <a class="cta" href="Jennifer-Johnson-Brand-Bible.pdf" download>Download the PDF ↓</a>
+      <a class="cta2" href="Call-Two-Recap-Jennifer-Johnson.pdf" target="_blank" rel="noopener">Call Two Recap ↗</a>
       <div class="by">By Andrea Johnson · FemmeQUARTERS</div>
     </div>
   </div>
@@ -319,7 +343,7 @@ nav .right .dl:hover{transform:translateY(-1px)}
     <div class="row">
       <div>
         <div class="k">The Niche Please Framework</div>
-        <h3>Eleven concepts. <em>Your whole brand inside them.</em></h3>
+        <h3>Your whole brand inside the framework, <em>plus where we landed and what’s next.</em></h3>
       </div>
       <button class="expand" id="expandAll">Expand all</button>
     </div>
@@ -464,7 +488,7 @@ nav .right .dl:hover{transform:translateY(-1px)}
         </div>
       </div>
       <div class="callout darkc">
-        <div class="ik">The Fortune 100 CMO who became a healer</div>
+        <div class="ik">The Fortune 100 CMO who became the bridge</div>
         <div class="big">Strategy and soul.<br>You’re <span class="it neon">the bridge.</span></div>
         <div class="s">Boardroom and sound bath · Eastern and Western · woven together</div>
       </div>
@@ -494,8 +518,8 @@ nav .right .dl:hover{transform:translateY(-1px)}
         <div class="item"><h4>You redefine the destination <span class="it">instead of selling a faster climb.</span></h4><p>Don’t climb faster up a ladder leaning on the wrong wall. Build a better one.</p></div>
         <div class="item"><h4>“We’re a family” culture <span class="it">is a red flag.</span></h4><p>Honest culture beats performed belonging. Families don’t restructure you out at a moment’s notice.</p></div>
         <div class="item"><h4>Purpose first, <span class="it">or it’s lipstick on a pig.</span></h4><p>A rebrand without a purpose underneath it is froufrou. Anchor it in the impact you want to have on people.</p></div>
-        <div class="item"><h4>Niche up and out. <span class="it">The work is transformational, led by the human.</span></h4><p>The transactional box flattens you. You refuse to be reduced to a single deliverable.</p></div>
         <div class="item"><h4>You’re the bridge <span class="it">between the boardroom and the unseen.</span></h4><p>Once you see it, you can’t unsee it. The traditional and the woo, woven together.</p></div>
+        <div class="item"><h4>Everything is solvable, <span class="it">and that is not naive.</span></h4><p>You hold reality, you just refuse to live there. The reframe is your method: from the dense minutia of what is, to neutral, to possibility. Hope is a strategy when you know how to move someone through it. Queen of the reframe.</p></div>
       </div>
     </div>
   </details>
@@ -510,11 +534,11 @@ nav .right .dl:hover{transform:translateY(-1px)}
     </summary>
     <div class="panel">
       <div class="chord">
-        <div class="note"><div class="nk">The Way · how you work</div><div class="nt">Trusted advisor &amp; healer in one</div><p>You lead with the human first, let the strategy follow. You read energy and keep the freedom to say no. Cloud-moving: you set the vision and orchestrate the partners who execute it. You sit in the hard truth, then move them to neutral.</p></div>
+        <div class="note"><div class="nk">The Way · how you work</div><div class="nt">Trusted advisor and sounding board</div><p>You lead with the human first, let the strategy follow. You read energy and keep the freedom to say no. You set the vision, then orchestrate the partners who execute it. And one of your signature moves is the reframe: you sit in the hard truth so it has a pulse, then move someone to neutral and open the pathway to possibility. Queen of the reframe, one note of how you work, not the whole song. The full method we keep building together.</p></div>
         <div class="note"><div class="nk">The What · what they become</div><div class="nt">Depleted-and-striving → whole-and-deliberate</div><p>Not the deliverable. The becoming. A leader who has real impact without overriding her wellbeing, designs life on her own terms, and knows who she is on the other side of everything she built.</p></div>
-        <div class="note"><div class="nk">The We · who they belong to</div><div class="nt">A named room, built on purpose</div><p>The hardest, highest-leverage note. Right now you have an audience and a network, not yet a named room. The build is a movement of women building a ladder worth climbing. Candidates to test: “I’m a New Morrow leader.” “Whole-life leaders.”</p></div>
+        <div class="note"><div class="nk">The We · who they belong to</div><div class="nt">The Table. Come as you are.</div><p>The opposite of the buttoned-up boardroom: calm, relaxed, you are accepted here, the performance finally set down. High impact through real conversation, not pressure. You have already started building it in person. You call it The Table. You gather women at thresholds, create a room where they find each other, for women who are becoming something they do not have words for yet, so they stop crossing it alone.</p></div>
       </div>
-      <div class="chordfinal">You’re a trusted-advisor-and-healer, who takes leaders from depleted-and-striving to whole-and-deliberate, inside a movement of women building a ladder worth climbing. No one else plays those three notes at once.</div>
+      <div class="chordfinal">You’re the trusted advisor who sits in the hard truth and opens the pathway to possibility, who takes leaders from depleted-and-striving to whole-and-deliberate, inside a movement of women building a ladder worth climbing. No one else plays those three notes at once.</div>
     </div>
   </details>
 
@@ -586,7 +610,8 @@ nav .right .dl:hover{transform:translateY(-1px)}
         <div class="vc do">
           <h4>Voice do’s</h4>
           <ul>
-            <li><b>Lead with the human and the story,</b> then land the point.</li>
+            <li><b>Lead with the human and the story,</b> then land the point. Hook, story, then the concept.</li>
+            <li><b>Speak to power, not pain.</b> Desire-led, not victim-led. Call people up from their most expanded self.</li>
             <li><b>Be declarative.</b> Short, certain sentences.</li>
             <li><b>Use your real phrases</b> (below).</li>
             <li><b>Let warmth and edge coexist.</b> “This isn’t a fit” and “I adore you” in one breath.</li>
@@ -598,6 +623,7 @@ nav .right .dl:hover{transform:translateY(-1px)}
           <ul>
             <li><b>No corporate filler.</b> No “leverage,” “unlock,” “elevate,” “synergy.”</li>
             <li><b>No guru-speak.</b> The accessible bridge, not the high priestess.</li>
+            <li><b>No pain-point marketing as the main event.</b> A sprinkle is fine. Lead with it and you attract people who want to be fixed, not partnered with.</li>
             <li><b>No false humility, no hard hustle.</b> Neither shrinking nor grinding.</li>
             <li><b>Don’t bury the story</b> under frameworks. The story is the proof.</li>
           </ul>
@@ -663,18 +689,60 @@ nav .right .dl:hover{transform:translateY(-1px)}
   <!-- 11 OPEN THREADS (dark) -->
   <details class="card dark" id="c11">
     <summary>
-      <div class="clabel"><span class="num">11</span> Niche Please · The Invitation Forward</div>
-      <div class="chead">What we <span class="neon">sharpen together.</span></div>
-      <div class="cprev">Deliberately left open. Decisions you should feel, not decisions to make for you. This is what we work on Call Two and beyond.</div>
-      <div class="more"><span class="lblclosed">See the open threads</span><span class="lblopen">Close</span> <span class="ar">↓</span></div>
+      <div class="clabel"><span class="num">11</span> Niche Please · Where We Landed</div>
+      <div class="chead">What we <span class="neon">decided on Call Two.</span></div>
+      <div class="cprev">The open threads, resolved. Your offer architecture, your movement, your room, and where the woo lives. One Category of One on top, clear lanes underneath.</div>
+      <div class="more"><span class="lblclosed">See the decisions</span><span class="lblopen">Close</span> <span class="ar">↓</span></div>
     </summary>
     <div class="panel">
       <div class="stack">
-        <div class="item"><h4><span class="tn">A</span>The We, named.</h4><p>Pick and commit to the identity your people claim out loud. The highest-leverage open item, and the note that takes the most intentional work over the next year.</p></div>
-        <div class="item"><h4><span class="tn">B</span>The movement name.</h4><p>Land on one rallying line. To test: “Strong leaders, whole lives” as the felt promise, “build a ladder worth climbing” as the rallying line.</p></div>
-        <div class="item"><h4><span class="tn">C</span>The B2B and B2C arms.</h4><p>One unified Category of One sits above both. Name how the same identity expresses in each lane, but resist splitting the brand in two.</p></div>
-        <div class="item"><h4><span class="tn">D</span>The joint offer with Brian.</h4><p>Strategic positioning plus his visual storytelling. Keep it as a deliberate, by-request layer for now. Your instinct not to force it is right.</p></div>
-        <div class="item"><h4><span class="tn">E</span>How loud the woo goes, and where.</h4><p>Lean in as the bridge, with one quieter register kept for conservative rooms.</p></div>
+        <div class="item"><h4><span class="tn">1</span>The hero offer: Board of One.</h4><p>Your 1:1 is Board of One. A private board member, one trusted advisor in your corner. The fun name out front, the plain details underneath. The Leader Reset stays in your back pocket, a trial run or a quiet down-sell, never the public lead.</p></div>
+        <div class="item"><h4><span class="tn">2</span>Lead with the 1:1. Hold the rest.</h4><p>You lead with the B2C 1:1 work. The B2B advisory and team-health work are real and lucrative, but you do not proactively market them. They find you. One Category of One sits above all of it, and the offers are just pathways in.</p></div>
+        <div class="item"><h4><span class="tn">3</span>The movement: Strong leaders, whole lives.</h4><p>This is the rallying line, and it could even become the brand. It would live on even if your name were removed from it.</p></div>
+        <div class="item"><h4><span class="tn">4</span>The We: The Table.</h4><p>You gather women at thresholds so they stop crossing it alone. The room is already forming in person.</p></div>
+        <div class="item"><h4><span class="tn">5</span>The woo, and the word “healer.”</h4><p>Boardroom and sound bath stays your private truth. Do not lead with it externally. And “healer” is out. You are the trusted advisor, the bridge, the queen of the reframe.</p></div>
+        <div class="item"><h4><span class="tn">6</span>Still open.</h4><p>The joint offer with Brian (keep it by-request for now). Whether the movement name replaces newmorrow. And whether a group or mastermind emerges later, once the 1:1 feels great.</p></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- 12 NEXT STEPS -->
+  <details class="card" id="c12">
+    <summary>
+      <div class="clabel"><span class="num">12</span> After Call Two · Next Steps</div>
+      <div class="chead caps">What to do <span class="it">next.</span></div>
+      <div class="cprev">A short, ordered list so you leave with momentum, not eighty open tabs. One thing at a time, in order.</div>
+      <div class="more"><span class="lblclosed">See your next steps</span><span class="lblopen">Close</span> <span class="ar">↓</span></div>
+    </summary>
+    <div class="panel">
+      <div class="divln"></div>
+      <div class="stack">
+        <div class="item"><h4><span class="tn">1</span>Claim your one-on-one offer.</h4><p>Lock the deliverables and one clear monthly price. Stop pricing it per person. A flat monthly rate, a weekly call, messaging access between calls, a four-month commit that then rolls month to month. Price it stretchy, not stressy: the number you can say with a straight spine and zero crumble.</p></div>
+        <div class="item"><h4><span class="tn">2</span>Brand it Board of One.</h4><p>Have fun with the messaging. The fun name out front, the plain details, what it includes, underneath.</p></div>
+        <div class="item"><h4><span class="tn">3</span>Build a simple landing page and an application.</h4><p>You can build the page in Claude. Keep the application a Google form. People apply, then you have the conversation about Board of One or the Leader Reset. Flirt, don’t pitch.</p></div>
+        <div class="item"><h4><span class="tn">4</span>Keep the Leader Reset in your back pocket.</h4><p>A trial run, or a gentle down-sell when someone is not ready for the full investment. Offered behind the scenes, never the public lead.</p></div>
+        <div class="item"><h4><span class="tn">5</span>Start your email list with a free lead magnet.</h4><p>A quiz or assessment like “Are you leading, or overriding?” It qualifies the right people, opens conversations, and hands you real market research.</p></div>
+        <div class="item"><h4><span class="tn">6</span>Make Instagram public and front-facing.</h4><p>A handle closer to your name, a clear bio pulled from this work. Play there with a small audience, that is a feature, and lean on LinkedIn for the people already bought in. Both.</p></div>
+        <div class="item"><h4><span class="tn">7</span>Start posting from this brand.</h4><p>Distill it into small nuggets: your story, what you stand for, who it is for. Lead with story, not the concept. And play with your defining metaphor, the visceral image for the transformation, the way “nervous to try” became “a fun adventure.”</p></div>
+      </div>
+    </div>
+  </details>
+
+  <!-- 13 RESOURCES (dark) -->
+  <details class="card dark" id="c13">
+    <summary>
+      <div class="clabel"><span class="num">13</span> After Call Two · Your Toolkit</div>
+      <div class="chead">Resources <span class="neon">I’m sending you.</span></div>
+      <div class="cprev">The assets to make the next steps easy. Take them, tweak them, make them yours.</div>
+      <div class="more"><span class="lblclosed">See the toolkit</span><span class="lblopen">Close</span> <span class="ar">↓</span></div>
+    </summary>
+    <div class="panel">
+      <div class="stack">
+        <div class="item"><h4>This brand bible.</h4><p>Your source of truth, this live page and the downloadable PDF. Everything else gets built from it.</p></div>
+        <div class="item"><h4>Your live link.</h4><p>The page you can send anyone: <em>jen-johnson-newmorrow.netlify.app</em></p></div>
+        <div class="item"><h4>A testimonial question form.</h4><p>Structured prompts so clients give you meaty, usable words, not fluff. And a nudge to ask for short video when the relationship is right. <a href="https://forms.gle/FUomgGfPW5z4HLoM8" target="_blank" rel="noopener" style="color:var(--neon);font-weight:700;text-decoration:underline">Open the form ↗</a></p></div>
+        <div class="item"><h4>An application template.</h4><p>The FemmeQUARTERS application. Questions to filter and flirt. Start from mine, tweak it to your voice. <a href="https://forms.gle/5dhwoG6xKKMGrm8W7" target="_blank" rel="noopener" style="color:var(--neon);font-weight:700;text-decoration:underline">Open the form ↗</a></p></div>
+        <div class="item"><h4>The call recap.</h4><p>Everything we covered, so you don’t have to hold it all in your head. <a href="Call-Two-Recap-Jennifer-Johnson.pdf" target="_blank" rel="noopener" style="color:var(--neon);font-weight:700;text-decoration:underline">Open the recap ↗</a></p></div>
       </div>
     </div>
   </details>
@@ -688,9 +756,33 @@ nav .right .dl:hover{transform:translateY(-1px)}
     <div class="next reveal">This is yours, Jen</div>
     <h3 class="reveal d1">Built from your own words. We sharpen it together until <span class="neon">it’s unmistakable.</span></h3>
     <a class="dlbig reveal d2" href="Jennifer-Johnson-Brand-Bible.pdf" download>Download the full PDF ↓</a>
+    <div class="reveal d2" style="margin-top:18px"><a href="Call-Two-Recap-Jennifer-Johnson.pdf" target="_blank" rel="noopener" style="color:var(--neon);font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--neon);padding-bottom:3px">Or open your Call Two Recap ↗</a></div>
+
+    <div class="invite reveal d2">
+      <div class="ik">Where to from here</div>
+      <div class="ih">You named it yourself. Every leader needs <em>a Board of One.</em></div>
+      <p class="intro">This was the foundation, and the work you came for is complete. But a brand bible is a map, and the building is its own kind of brave: the offers, the pricing, the landing page, the first posts, the launch. That is the part most people white-knuckle alone. <b>You don’t have to.</b></p>
+      <div class="offers">
+        <div class="offer primary">
+          <div class="ol">The 1:1 · Your Board of One</div>
+          <h4>Stay in my corner while you build.</h4>
+          <p>The human first, the reframe when you get stuck, a steady hand on the strategy. We turn this map into a living business, together. Includes everything inside FemmeQUARTERS.</p>
+          <div class="price">$2,000 / month · four-month commitment</div>
+          <a class="btn" href="https://www.femmequarters.net/offers/f7pieLhN/checkout" target="_blank" rel="noopener">Step into the 1:1 ↗</a>
+        </div>
+        <div class="offer secondary">
+          <div class="ol">FemmeQUARTERS · The room</div>
+          <h4>Build alongside the room.</h4>
+          <p>A room of women doing the brave thing too, with me close by. The lighter way to keep going, together.</p>
+          <div class="price">$800 / month · six-month commitment</div>
+          <a class="btn" href="https://www.femmequarters.net/offers/rU9SuJ9c/checkout" target="_blank" rel="noopener">Join FemmeQUARTERS ↗</a>
+        </div>
+      </div>
+    </div>
+
     <div class="colophon reveal d2">
       <div class="mk">FEMME<span class="sl">/</span>QUARTERS</div>
-      <div class="cr">Prepared by Andrea Johnson · The Private Line<br>The Messaging Bible &amp; Core Positioning for Jennifer Johnson · newmorrow<br>Working draft for refinement together on Call Two</div>
+      <div class="cr">Prepared by Andrea Johnson · The Private Line<br>The Messaging Bible &amp; Core Positioning for Jennifer Johnson · newmorrow<br>Updated after Call Two · a living document we keep sharpening</div>
     </div>
   </div>
 </footer>
